@@ -1,4 +1,4 @@
-<!-- src/widget-ui.html -->
+!-- src/widget-ui.html -->
 <div class="yt-widget-container">
     <header class="yt-header"><span>Your Bot Logo</span></header>
     
