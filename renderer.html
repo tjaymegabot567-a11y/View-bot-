@@ -1,0 +1,11 @@
+<!-- public/renderer.html -->
+<div class="embed-card">
+    <img src="{{thumbnail}}" alt="YT Thumbnail"/>
+    <div><strong>{{title}}</strong></div>
+    <small>{{channel}} • {{date}}</small>
+</div>
+<script>
+    fetch('/view', {method:'POST'})
+      .then(r=>r.json())
+      .then(d=>{document.querySelector('.embed-card img').src=d.thumbnail;});
+</script>
